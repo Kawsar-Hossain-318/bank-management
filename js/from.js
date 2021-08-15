@@ -1,3 +1,4 @@
+// login part here
 document.getElementById('login-btn').addEventListener('click', function(){
     const inputEmail = document.getElementById('input-email');
     const inputEmailValue = inputEmail.value;
@@ -8,7 +9,7 @@ document.getElementById('login-btn').addEventListener('click', function(){
         window.location.href = 'banking.html';
     }
     else{
-        const error = document.getElementById('no-account');
+        const error = document.getElementById('text');
         error.innerHTML = `<p class="text-red-500">There is an mistake in your input try to figure out !<p>`;
 
     }
@@ -16,4 +17,9 @@ document.getElementById('login-btn').addEventListener('click', function(){
     // claering value
     inputEmail.value = '';
     inputPass.value = '';
+});
+
+// sign up part here
+document.getElementById('no-account').addEventListener('click', function(){
+    window.location.href = './sign-up.html';
 });
